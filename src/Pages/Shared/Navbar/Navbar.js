@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="flex flex-wrap items-center justify-between px-2 bg-transparent sticky top-0">
+      <nav className="flex flex-wrap items-center justify-between px-2 bg-transparent sticky top-0 z-50 backdrop-opacity-20">
         <div
           style={{ maxWidth: '1200px' }}
           className="container px-4 mx-auto flex flex-wrap items-center justify-between"

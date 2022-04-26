@@ -20,7 +20,7 @@ const Home = () => {
           className=""
         >
           <Navbar />
-          <div className="flex items-center h-[40vh] justify-center">
+          <div className="flex items-center h-[40vh] justify-center z-0">
             <div className="text-center">
               <h1 className="text-2xl md:text-4xl uppercase font-semibold tracking-wide font-sans my-3">
                 I grow by helping people in need.
