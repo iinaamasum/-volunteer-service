@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="flex flex-wrap items-center justify-between px-2 bg-transparent sticky top-0 z-50 backdrop-opacity-20">
+      <nav className="flex flex-wrap items-center justify-between px-2 bg-slate-50 sticky top-0 z-50 backdrop-opacity-20">
         <div
           style={{ maxWidth: '1200px' }}
           className="container px-4 mx-auto flex flex-wrap items-center justify-between"
@@ -49,7 +49,7 @@ const Navbar = () => {
               <div className="lg:flex items-center w-full lg:w-auto text-center ">
                 {links.map((link) => (
                   <Link
-                    className="block my-2 lg:my-0 text-center lg:inline-block mr-0 md:mr-10 text-md font-semibold text-gray-400 hover:text-red-800 transition-all duration-150 ease-in-out"
+                    className="block my-2 lg:my-0 text-center lg:inline-block mr-0 md:mr-10 text-md font-semibold text-gray-600 hover:text-red-800 transition-all duration-150 ease-in-out"
                     to={link.path}
                     key={link.id}
                   >
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </button>
                 <button
                   className="bg-purple-600 my-2 lg:my-0 text-white active:bg-red-800
-                  hover:bg-purple-800 font-bold  text-md px-5 py-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 w-3/4 lg:w-auto tracking-wider"
+                  hover:bg-purple-800 font-bold  text-md px-5 py-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-4 md:mb-1 ease-linear transition-all duration-150 w-3/4 lg:w-auto tracking-wider"
                   type="button"
                 >
                   Admin
