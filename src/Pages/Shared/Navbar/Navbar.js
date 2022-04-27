@@ -1,7 +1,7 @@
 import React from 'react';
 import { BiCollapse } from 'react-icons/bi';
 import { RiMenuFoldFill } from 'react-icons/ri';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../../images/logos/Group 1329.png';
 
 const Navbar = () => {
@@ -12,6 +12,7 @@ const Navbar = () => {
     { id: 3, path: '/events', name: 'Events' },
     { id: 4, path: '/blogs', name: 'Blog' },
   ];
+  const navigate = useNavigate();
   return (
     <>
       <nav className="flex flex-wrap items-center justify-between px-2 bg-slate-50 sticky top-0 z-50 backdrop-opacity-20">
@@ -57,12 +58,14 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <button
+                  onClick={() => navigate('/login')}
                   className="text-black my-2 lg:my-0 font-sans tracking-wider font-semibold text-md mr-3 hover:bg-gray-100 px-5 py-1 rounded-full hover:text-red-700 shadow hover:shadow outline-none focus:outline-none  mb-1 ease-linear transition-all duration-150 w-3/4 lg:w-auto"
                   type="button"
                 >
                   Log In
                 </button>
                 <button
+                  onClick={() => navigate('/signup')}
                   className="bg-orange-600 my-2 lg:my-0 text-white active:bg-red-800
                   hover:bg-orange-800 font-bold  text-md px-5 py-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mb-1 ease-linear transition-all duration-150 w-3/4 lg:w-auto tracking-wider mr-3"
                   type="button"
@@ -70,6 +73,7 @@ const Navbar = () => {
                   Sign Up
                 </button>
                 <button
+                  onClick={() => navigate('/admin')}
                   className="bg-purple-600 my-2 lg:my-0 text-white active:bg-red-800
                   hover:bg-purple-800 font-bold  text-md px-5 py-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-4 md:mb-1 ease-linear transition-all duration-150 w-3/4 lg:w-auto tracking-wider"
                   type="button"
