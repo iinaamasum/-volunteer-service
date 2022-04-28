@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import signup from '../../../images/auth/log.png';
 import Footer from '../../Shared/Footer/Footer';
 import NavAlter from '../../Shared/NavAlter/NavAlter';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Signup.css';
 
 const Signup = () => {
@@ -11,15 +12,28 @@ const Signup = () => {
       <div className="hero-signup pb-10">
         <NavAlter />
         <div style={{ maxWidth: '1200px' }} className="mx-auto">
-          <div className="container mx-auto px-5 md:px-0 lg:flex justify-between">
+          <div className="container mx-auto px-3 md:px-8 lg:flex justify-between">
             <div className="mt-5 md:mt-10">
               <img className="img-fluid" src={signup} alt="" />
             </div>
             <form className="w-full lg:w-1/2">
-              <div className="bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+              <div className="bg-gray-100 rounded-lg p-3 sm:p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
                 <h2 className="text-gray-900 text-2xl text-center font-medium title-font mb-3">
                   Sign Up
                 </h2>
+                <div className="">
+                  <p className="text-center font-semibold text-slate-400 mb-1">
+                    Social Sign Up
+                  </p>
+                  <SocialLogin />
+                  <div className="flex w-full justify-between items-center mt-2">
+                    <div className="border-b-2 border-red-600 w-1/3"></div>
+                    <p className="w-1/3 mx-auto text-center text-slate-400 font-semibold">
+                      Or sign up with credentials
+                    </p>
+                    <div className="border-b-2 border-red-600 w-1/3"></div>
+                  </div>
+                </div>
                 <div className="relative mb-4">
                   <label
                     htmlFor="full-name"
