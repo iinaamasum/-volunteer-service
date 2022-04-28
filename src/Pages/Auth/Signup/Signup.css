@@ -1,0 +1,13 @@
+.hero-signup {
+  display: block;
+  box-sizing: border-box;
+  /* min-height: 95vh; */
+  background-color: #dc3d4a15;
+  clip-path: ellipse(90% 100% at 50% 0%);
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-signup {
+    clip-path: none;
+  }
+}
