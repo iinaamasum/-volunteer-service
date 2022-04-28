@@ -7,16 +7,19 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import './Signup.css';
 
 const Signup = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div className="hero-signup pb-10">
         <NavAlter />
         <div style={{ maxWidth: '1200px' }} className="mx-auto">
           <div className="container mx-auto px-3 md:px-8 lg:flex justify-between">
-            <div className="mt-5 md:mt-10">
+            <div className="mt-5 md:mt-24">
               <img className="img-fluid" src={signup} alt="" />
             </div>
-            <form className="w-full lg:w-1/2">
+            <form onSubmit={handleSubmit} className="w-full lg:w-1/2">
               <div className="bg-gray-100 rounded-lg p-3 sm:p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
                 <h2 className="text-gray-900 text-2xl text-center font-medium title-font mb-3">
                   Sign Up

@@ -7,6 +7,9 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
 const Login = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div className="hero pb-16">
@@ -16,7 +19,7 @@ const Login = () => {
             <div className="mt-5 md:mt-10 px-3 sm:px-8 order-last">
               <img className="w-full h-[70vh]" src={login} alt="" />
             </div>
-            <form className="w-full lg:w-1/2">
+            <form onSubmit={handleSubmit} className="w-full lg:w-1/2">
               <div className="bg-gray-100 rounded-lg p-3 sm:p-8 flex flex-col md:ml-auto w-full mt-5">
                 <h2 className="text-gray-900 text-2xl text-center font-medium title-font mb-3">
                   Log In
