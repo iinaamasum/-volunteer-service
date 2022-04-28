@@ -8,17 +8,17 @@ import './Login.css';
 const Login = () => {
   return (
     <>
-      <div className="hero">
+      <div className="hero pb-16">
         <NavAlter />
         <div style={{ maxWidth: '1200px' }} className="mx-auto">
-          <div className="container mx-auto px-5 md:px-0 flex justify-between items-center">
-            <div className="">
-              <img src={login} alt="" />
+          <div className="container mx-auto px-5 md:px-0 lg:flex justify-between ">
+            <div className="mt-5 md:mt-10 px-8 order-last">
+              <img className="w-full h-[70vh]" src={login} alt="" />
             </div>
-            <form>
-              <div className="bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-                <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
-                  Sign Up
+            <form className="w-full lg:w-1/2">
+              <div className="bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-5">
+                <h2 className="text-gray-900 text-2xl text-center font-medium title-font mb-3">
+                  Log In
                 </h2>
                 <div className="relative mb-4">
                   <label
